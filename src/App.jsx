@@ -200,9 +200,12 @@ function App() {
           {/* Buttons */}
           <div className="flex gap-5 mt-10">
 
-            <button className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 hover:scale-105 transition duration-300">
+            <a
+              href="#projects"
+              className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 hover:scale-105 transition duration-300"
+            >
               View Projects
-            </button>
+            </a>
 
            <a
               href={resume}
