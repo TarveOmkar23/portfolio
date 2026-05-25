@@ -1,6 +1,15 @@
 import{ motion } from "framer-motion";
 import { useEffect, useState } from "react";
 //import CountUp from "react-countup"
+import { FaGithub, FaLinkedin, FaEnvelope, FaBrain, FaChartBar,
+  FaGlobe,
+  FaTools,
+  FaBuilding,
+  FaRobot,
+  FaRocket,
+  FaShieldAlt,
+  FaNetworkWired,
+  FaClipboardList, } from "react-icons/fa"
 
 import { TypeAnimation } from "react-type-animation";
 import { FiMoon, FiSun } from "react-icons/fi"
@@ -223,7 +232,7 @@ function App() {
               target="_blank"
               className="hover:text-black hover:scale-110 transition duration-300"
             >
-              💻
+              <FaGithub />
             </a>
 
             <a
@@ -231,14 +240,14 @@ function App() {
               target="_blank"
               className="hover:text-black hover:scale-110 transition duration-300"
             >
-              🔗
+              <FaLinkedin />
             </a>
 
             <a
               href="mailto:omkartarve23@gmail.com"
               className="hover:text-black hover:scale-110 transition duration-300"
             >
-              📧
+              <FaEnvelope />
             </a>
 
           </div>
@@ -401,7 +410,7 @@ function App() {
               <div className="flex items-center gap-3 mb-5">
 
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-800 to-black text-white shadow-md flex items-center justify-center text-xl">
-                  🧠
+                  <FaBrain />
                 </div>
 
                 <h3 className="font-semibold text-2xl text-gray-800 dark:text-white transition duration-300">
@@ -425,7 +434,7 @@ function App() {
               <div className="flex items-center gap-3 mb-5">
 
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-800 to-black text-white shadow-md flex items-center justify-center text-xl">
-                  📊
+                  <FaChartBar />
                 </div>
 
                 <h3 className="font-semibold text-2xl text-gray-800 dark:text-white transition duration-300">
@@ -447,7 +456,7 @@ function App() {
               <div className="flex items-center gap-3 mb-5">
 
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-800 to-black text-white shadow-md flex items-center justify-center text-xl">
-                  🌐
+                  <FaGlobe />
                 </div>
 
                 <h3 className="font-semibold text-2xl text-gray-800 dark:text-white transition duration-300">
@@ -470,7 +479,7 @@ function App() {
               <div className="flex items-center gap-3 mb-5">
 
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-800 to-black text-white shadow-md flex items-center justify-center text-xl">
-                  ⚙️
+                  <FaTools />
                 </div>
 
                 <h3 className="font-semibold text-2xl text-gray-800 dark:text-white transition duration-300">
@@ -616,7 +625,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🏢
+                  <FaBuilding />
                 </div>
 
                 <div>
@@ -651,7 +660,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🤖
+                  <FaRobot />
                 </div>
 
                 <div>
@@ -686,7 +695,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🚀
+                  <FaRocket />
                 </div>
 
                 <div>
@@ -765,7 +774,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🔐
+                  <FaShieldAlt />
                 </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -812,7 +821,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🌐
+                  <FaGlobe />
                 </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -846,7 +855,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  🛡️
+                  <FaShieldAlt />
                 </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -880,7 +889,7 @@ function App() {
               <div className="flex items-center gap-4 mb-5">
 
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
-                  📋
+                  <FaClipboardList />
                 </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -1344,7 +1353,7 @@ function App() {
               target="_blank"
               className="hover:text-black dark:hover:text-white hover:scale-110 transition duration-300"
             >
-              💻
+              <FaGithub />
             </a>
 
             <a
@@ -1352,14 +1361,14 @@ function App() {
               target="_blank"
               className="hover:text-black dark:hover:text-white hover:scale-110 transition duration-300"
             >
-              🔗
+              <FaLinkedin />
             </a>
 
             <a
               href="mailto:omkartarve23@gmail.com"
               className="hover:text-black dark:hover:text-white hover:scale-110 transition duration-300"
             >
-              📧
+              <FaEnvelope />
             </a>
 
           </div>
