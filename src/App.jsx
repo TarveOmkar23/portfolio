@@ -9,7 +9,8 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaBrain, FaChartBar,
   FaRocket,
   FaShieldAlt,
   FaNetworkWired,
-  FaClipboardList, } from "react-icons/fa"
+  FaClipboardList,
+  FaSchool, } from "react-icons/fa"
 
 import { TypeAnimation } from "react-type-animation";
 import { FiMoon, FiSun } from "react-icons/fi"
@@ -17,6 +18,7 @@ import { FiMoon, FiSun } from "react-icons/fi"
 import profile from "./assets/profile.jpeg"
 import SLTS from "./assets/SLTS.png"
 import CPP from "./assets/CPP.jpeg"
+import { FaR } from "react-icons/fa6";
 
 // import resume from "./resume/resume.pdf"
 
@@ -142,14 +144,14 @@ function App() {
               </li>
 
               <li>
-                <a href="#skills" className="hover:text-black transition duration-300" onClick={() => setMenuOpen(false)}>
-                  Skills
+                <a href="#projects" className="hover:text-black transition duration-300" onClick={() => setMenuOpen(false)}>
+                  Projects
                 </a>
               </li>
 
               <li>
-                <a href="#projects" className="hover:text-black transition duration-300" onClick={() => setMenuOpen(false)}>
-                  Projects
+                <a href="#experience" className="hover:text-black transition duration-300" onClick={() => setMenuOpen(false)}>
+                  Experience
                 </a>
               </li>
 
@@ -217,7 +219,7 @@ function App() {
             </a>
 
            <a
-              href="/public/resume.pdf"
+              href="/resume.pdf"
               download
               className="border border-gray-400 px-6 py-3 rounded-xl hover:bg-gray-100 hover:scale-105 transition duration-300"
             >
@@ -244,7 +246,7 @@ function App() {
             </a>
 
             <a
-              href="mailto:omkartarve23@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=omkartarve23@gmail.com"
               className="hover:text-black hover:scale-110 transition duration-300"
             >
               <FaEnvelope />
@@ -274,7 +276,7 @@ function App() {
         </motion.div>
       </section>
       {/* Stats Section */}
-      <section className="px-6 md:px-12 py-16">
+      {/* <section className="px-6 md:px-12 py-16">
 
         <motion.div
           className="max-w-7xl  mx-auto grid grid-cols-2 md:grid-cols-4 gap-6"
@@ -334,7 +336,7 @@ function App() {
 
         </motion.div>
 
-      </section>
+      </section> */}
       {/* About Section */}
       <section id="about" className="px-6 md:px-12 py-20 md:py-24 border-t border-gray-200">
 
@@ -361,20 +363,32 @@ function App() {
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-9">
 
               I am an Information Technology student passionate about
-              Machine Learning, Data Visualization, and building
-              practical AI-powered applications.
+              Machine Learning, Artificial Intelligence, and modern
+              web technologies. I enjoy building intelligent systems
+              that solve real-world problems through data-driven solutions.
 
               <br /><br />
 
-              I enjoy working on real-world projects involving
-              prediction systems, analytics dashboards, and intelligent
-              web applications using Python, Flask, and modern tools.
+              My technical interests include Machine Learning,
+              Data Visualization, AI-powered applications,
+              and responsive frontend development. I have worked on
+              projects such as Sign Language Translation Systems
+              and Car Price Prediction platforms using Python,
+              Flask, Scikit-learn, and modern development tools.
 
               <br /><br />
 
-              My goal is to continuously improve my technical skills
-              while creating impactful technology solutions.
+                Along with academic learning, I have completed
+                industrial training and internship programs focused on
+                AI/ML technologies, where I gained practical exposure
+                to real-world development workflows and problem-solving.
+              
+              <br /><br />
 
+              Currently, I am focused on improving my skills in
+              Machine Learning, Data Analytics, and modern
+              full-stack technologies while continuously building
+              impactful and user-focused applications.
             </p>
 
           </motion.div>
@@ -425,6 +439,9 @@ function App() {
                 <p>• Scikit-learn</p>
                 <p>• NumPy</p>
                 <p>• Pandas</p>
+                <p>• Data Preprocessing</p>
+                <p>• Model Evaluation</p>
+                <p>• Feature Engineering</p>
               </div>
 
             </div>
@@ -470,6 +487,8 @@ function App() {
                 <p>• HTML</p>
                 <p>• CSS</p>
                 <p>• Flask</p>
+                <p>• Tailwind CSS</p>
+                <p>• Responsive UI Design</p>
               </div>
 
             </div>
@@ -492,6 +511,8 @@ function App() {
                 <p>• Git</p>
                 <p>• GitHub</p>
                 <p>• VS Code</p>
+                <p>• Jupyter Notebooks</p>
+                <p>• Google Colab</p>
               </div>
 
             </div>
@@ -502,93 +523,142 @@ function App() {
 
       </section>
       {/* Experience Section */}
-      <section
-        id="experience"
-        className="px-6 md:px-12 py-20 md:py-24 border-t border-gray-200 bg-white dark:bg-[#111111] transition duration-300"
-      >
+    <section
+      id="experience"
+      className="px-6 md:px-12 py-20 md:py-24 border-t border-gray-200 bg-white dark:bg-[#111111] transition duration-300"
+    >
 
-        <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
-          <motion.h2
-            className="text-4xl font-bold text-gray-900 dark:text-white mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            My Journey
-          </motion.h2>
+        <motion.h2
+          className="text-4xl font-bold text-gray-900 dark:text-white mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Education & Learning Journey
+        </motion.h2>
 
-          <motion.div
-            className="space-y-10"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+        <motion.div
+          className="space-y-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
 
-            {/* Journey Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl border border-gray-100">
+          {/* Education Card */}
+          <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 border border-gray-100 dark:border-gray-800">
 
-              <p className="text-sm text-gray-400 mb-3">
-                2023
-              </p>
+            <p className="text-sm text-gray-400 mb-3">
+              Academic Journey
+            </p>
 
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Started Learning Machine Learning
-              </h3>
+            <div className="flex items-center gap-4 mb-5">
 
-              <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
-                Began exploring Python, Machine Learning concepts,
-                and data analysis while building foundational
-                programming and problem-solving skills.
-              </p>
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
+                <FaSchool />
+              </div>
 
-            </div>
+              <div>
 
-            {/* Journey Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl border border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Bachelor of Engineering in Information Technology
+                </h3>
 
-              <p className="text-sm text-gray-400 mb-3">
-                2024
-              </p>
+                <p className="text-gray-500">
+                  BE Information Technology Graduate
+                </p>
 
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Developed AI-Based Projects
-              </h3>
-
-              <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
-                Worked on intelligent applications including
-                Sign Language Translation and prediction systems
-                using Machine Learning and Flask integration.
-              </p>
+              </div>
 
             </div>
 
-            {/* Journey Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl border border-gray-100">
+            <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
+              Completed Bachelor of Engineering in Information Technology
+              with strong interest in Machine Learning,
+              Artificial Intelligence, Data Visualization,
+              and modern software development.
+            </p>
 
-              <p className="text-sm text-gray-400 mb-3">
-                2025
-              </p>
+          </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Expanding Into Modern Web Technologies
-              </h3>
+          {/* Learning Card */}
+          <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 border border-gray-100 dark:border-gray-800">
 
-              <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
-                Building responsive developer portfolios,
-                improving frontend skills, and combining
-                AI with modern web experiences.
-              </p>
+            <p className="text-sm text-gray-400 mb-3">
+              Technical Learning
+            </p>
+
+            <div className="flex items-center gap-4 mb-5">
+
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
+                <FaBrain />
+              </div>
+
+              <div>
+
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Machine Learning & AI Development
+                </h3>
+
+                <p className="text-gray-500">
+                  AI/ML Learning Journey
+                </p>
+
+              </div>
 
             </div>
 
-          </motion.div>
+            <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
+              Learned Machine Learning concepts, prediction systems,
+              data analysis, and AI application development using
+              Python, Scikit-learn, Flask, and visualization tools.
+            </p>
 
-        </div>
+          </div>
 
-      </section>
+          {/* Industry Card */}
+          <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 border border-gray-100 dark:border-gray-800">
+
+            <p className="text-sm text-gray-400 mb-3">
+              Industry Exposure
+            </p>
+
+            <div className="flex items-center gap-4 mb-5">
+
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-black to-gray-700 text-white flex items-center justify-center text-2xl shadow-md">
+                <FaRocket />
+              </div>
+
+              <div>
+
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Internships & Industrial Training
+                </h3>
+
+                <p className="text-gray-500">
+                  Real-World Learning Experience
+                </p>
+
+              </div>
+
+            </div>
+
+            <p className="text-gray-600 dark:text-gray-300 leading-8 text-lg">
+              Completed AI/ML internship programs and industrial
+              training with practical exposure to real-world
+              development workflows, analytics, and intelligent systems.
+            </p>
+
+          </div>
+
+        </motion.div>
+
+      </div>
+
+    </section>
       {/* Internship Section */}
       <section
         id="internships"
@@ -646,7 +716,17 @@ function App() {
                 Completed Industrial Training and Internship Program
                 focused on Machine Learning concepts, AI applications,
                 and practical exposure to intelligent systems.
+              
               </p>
+              <br />
+
+              <a
+                href="https://drive.google.com/file/d/1oIhkeKywA8FZXpPyHADJqZ5IQD9lZuhv/view?usp=drive_link"
+                target="_blank"
+                className="bg-black text-white px-5 py-2 rounded-xl hover:bg-gray-800 hover:scale-105 transition duration-300"
+              >
+                View Certificate
+              </a>
 
             </div>
 
@@ -682,6 +762,15 @@ function App() {
                 hosted by IBM SkillBuild in collaboration with CSRBOX,
                 gaining exposure to machine learning workflows and AI concepts.
               </p>
+              <br />
+
+              <a
+                href="https://drive.google.com/file/d/1BN_jS6903Fwva9SUjolq1WWOSVPP7XWF/view?usp=sharing"
+                target="_blank"
+                className="bg-black text-white px-5 py-2 rounded-xl hover:bg-gray-800 hover:scale-105 transition duration-300"
+              >
+                View Certificate
+              </a>
 
             </div>
 
@@ -716,7 +805,18 @@ function App() {
                 Successfully completed a 4-week project-based learning
                 program on Agentic AI focused on becoming an
                 AI Agent Architect through hands-on AI learning.
+
+                
               </p>
+              <br />
+
+              <a
+                href="https://drive.google.com/file/d/1Tb8vtCmVniP2w9NLl70lCr9GswS8LZdX/view?usp=sharing"
+                target="_blank"
+                className="bg-black text-white px-5 py-2 rounded-xl hover:bg-gray-800 hover:scale-105 transition duration-300"
+              >
+                View Certificate
+              </a>
 
             </div>
 
@@ -920,15 +1020,16 @@ function App() {
 
       </section>
       {/* Tech Stack Section */}
+      {/* Tech Stack Section */}
       <section
-        id="techstack"
-        className="px-6 md:px-12 py-20 md:py-24 border-t border-gray-200 bg-white dark:bg-[#111111] transition duration-300"
+        id="tech"
+        className="px-6 md:px-12 py-20 border-t border-gray-200 bg-white"
       >
 
         <div className="max-w-7xl mx-auto">
 
           <motion.h2
-            className="text-4xl font-bold text-gray-900 dark:text-white mb-16"
+            className="text-4xl font-bold text-gray-900 dark:text-white mb-16 transition duration-300"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -938,116 +1039,45 @@ function App() {
           </motion.h2>
 
           <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
 
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
+            {[
+              "🐍 Python",
+              "⚛️ React",
+              "🌐 HTML & CSS",
+              "🎨 Tailwind",
+              "🔥 Flask",
+              "🗄️ SQL",
+              "📊 Power BI",
+              "📓 Jupyter",
+              "🤖 Scikit-learn",
+              "📈 Matplotlib",
+              "🧠 Machine Learning",
+              "💻 VS Code",
+              "🔧 Git" ,
+              "⚙️ GitHub",
+              "☁️ Google Colab",
+            ].map((tech, index) => (
 
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                🐍
+              <div
+                key={index}
+                className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center text-gray-600 text-lg"
+              >
+                <div className="text-4xl mb-4">
+                  {tech.split(" ")[0]}
+                </div>
+
+                <p className="font-semibold text-gray-700 text-lg">
+                  {tech.substring(2)}
+                </p>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Python
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                ⚛️
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                React
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                🌶️
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Flask
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                📊
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Power BI
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                🔢
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                NumPy
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                🐼
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Pandas
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                🌐
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                HTML/CSS
-              </h3>
-
-            </div>
-
-            {/* Tech Card */}
-            <div className="bg-white dark:bg-[#111111] transition duration-300 p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-3 hover:scale-105 border border-gray-100 text-center group">
-
-              <div className="text-5xl mb-4 group-hover:scale-110 transition duration-300">
-                ⚙️
-              </div>
-
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                GitHub
-              </h3>
-
-            </div>
+            ))}
 
           </motion.div>
 
@@ -1080,7 +1110,7 @@ function App() {
             {/* Project Card */}
             <div className="bg-white dark:bg-[#111827] p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition duration-300 border border-gray-100 dark:border-gray-800">
 
-              <div className="relative w-full h-56 rounded-2xl mb-6 overflow-hidden group">
+              <div className="relative w-full h-44 rounded-2xl mb-5 overflow-hidden group">
 
                 <img
                   src={SLTS}
@@ -1095,7 +1125,7 @@ function App() {
                 Sign Language Translation System
               </h3>
 
-              <p className="text-gray-500 dark:text-gray-300 leading-8 text-lg">
+              <p className="text-gray-500 dark:text-gray-300 leading-7 text-lg">
                 AI-powered system designed to recognize and translate
                 sign language gestures using Machine Learning and
                 computer vision techniques.
@@ -1140,7 +1170,7 @@ function App() {
             {/* Project Card */}
             <div className="bg-white dark:bg-[#111827] p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition duration-300 border border-gray-100 dark:border-gray-800">
 
-              <div className="relative w-full h-56 rounded-2xl mb-6 overflow-hidden group">
+              <div className="relative w-full h-44 rounded-2xl mb-5 overflow-hidden group">
 
                 <img
                   src={CPP}
@@ -1155,7 +1185,7 @@ function App() {
                 Car Price Prediction System
               </h3>
 
-              <p className="text-gray-500 dark:text-gray-300 leading-8 text-lg">
+              <p className="text-gray-500 dark:text-gray-300 leading-7 text-lg">
                 Machine Learning web application that predicts
                 car prices based on user inputs using trained
                 Random Forest models and Flask integration.
@@ -1223,10 +1253,10 @@ function App() {
             <div className="space-y-6 text-base md:text-lg text-gray-600 dark:text-gray-300 break-words">
 
               <a
-                href="mailto:omkartarve23@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=omkartarve23@gmail.com"
                 className="block hover:text-black dark:hover:text-white transition duration-300"
               >
-                📧 Email: omkartarve23@gmail.com
+                <FaEnvelope />Email: omkartarve23@gmail.com
               </a>
 
               <a
@@ -1234,7 +1264,7 @@ function App() {
                 target="_blank"
                 className="block hover:text-black dark:hover:text-white transition duration-300"
               >
-                💻 GitHub: github.com/TarveOmkar23
+                <FaGithub /> GitHub: github.com/TarveOmkar23
               </a>
 
               <a
@@ -1242,7 +1272,7 @@ function App() {
                 target="_blank"
                 className="block hover:text-black dark:hover:text-white transition duration-300"
               >
-                🔗 LinkedIn: linkedin.com/in/omkarshaniltarve
+                <FaLinkedin /> LinkedIn: linkedin.com/in/omkarshaniltarve
               </a>
 
             </div>
@@ -1365,7 +1395,7 @@ function App() {
             </a>
 
             <a
-              href="mailto:omkartarve23@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=omkartarve23@gmail.com"
               className="hover:text-black dark:hover:text-white hover:scale-110 transition duration-300"
             >
               <FaEnvelope />
