@@ -18,7 +18,7 @@ import profile from "./assets/profile.jpeg"
 import SLTS from "./assets/SLTS.png"
 import CPP from "./assets/CPP.jpeg"
 
-import resume from "./resume/resume.pdf"
+// import resume from "./resume/resume.pdf"
 
 // import {
 //   SiPython,
@@ -217,7 +217,7 @@ function App() {
             </a>
 
            <a
-              href={resume}
+              href="/public/resume.pdf"
               download
               className="border border-gray-400 px-6 py-3 rounded-xl hover:bg-gray-100 hover:scale-105 transition duration-300"
             >
@@ -1377,7 +1377,7 @@ function App() {
 
         <div className="text-center mt-10 text-gray-400 dark:text-gray-500 text-sm transition duration-300">
 
-          © 2025 Omkar Tarve. Built with React & Tailwind CSS.
+          © 2026 Omkar Tarve. Built with React & Tailwind CSS.
 
         </div>
 
