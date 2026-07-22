@@ -1,16 +1,134 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive developer portfolio built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**. It showcases my skills, projects, education, internships, certifications, and professional journey.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://your-portfolio-link.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎨 Modern and clean UI
+- 📱 Fully responsive design
+- ⚡ Smooth animations with Framer Motion
+- 👨‍💻 Interactive Hero section
+- 🙋 About Me
+- 💡 Skills & Tech Stack
+- 🎓 Education & Learning Journey
+- 💼 Internship & Training
+- 🚀 Project Showcase
+- 📄 Resume Download
+- 📬 Contact Information
+- 🌙 Dark Mode Support (In Progress)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend Framework |
+| Vite | Build Tool |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| Git & GitHub | Version Control |
+| Vercel | Deployment |
+
+---
+
+## 📂 Folder Structure
+
+```text
+portfolio/
+├── public/
+│   └── resume.pdf
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── README.md
+```
+
+---
+
+## 📌 Portfolio Sections
+
+- 🏠 Home
+- 👤 About
+- 💻 Skills
+- 🛠️ Tech Stack
+- 🎓 Education & Learning Journey
+- 💼 Internship & Training
+- 📂 Projects
+- 📬 Contact
+
+---
+
+## 🚀 Featured Projects
+
+### Sign Language Translation System
+An AI-powered application that translates sign language into text using Machine Learning.
+
+### Car Price Prediction System
+A Flask-based Machine Learning application that predicts used car prices.
+
+---
+
+## ⚙️ Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+```
+
+### Navigate to the Project
+
+```bash
+cd portfolio
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📱 Responsive Design
+
+This portfolio is optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+## 📫 Connect With Me
+
+- 💼 LinkedIn: https://linkedin.com/in/your-profile
+- 💻 GitHub: https://github.com/yourusername
+- 🌐 Portfolio: https://your-portfolio-link.vercel.app
+
+---
+
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
